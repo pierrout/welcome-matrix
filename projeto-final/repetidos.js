@@ -7,6 +7,18 @@ Mentor: Jonatan Machado
 
 Escreva um algoritmo que dado um número N, gere uma lista de N números aleatorios, de 0 a 9
 e em seguida, verifique se existem números repetidos e quais são esses números.
+--Math.floor(10* Math.random())
+-- var NumDuplicado = function(MinhaArray) {
+   
+    for(let i = 0; i < MinhaArray.length; i++) {
+        
+        if(MinhaArray.indexOf(MinhaArray[i]) != i) {
+            return true;
+        };
+    }
+    
+    return false;
+}
 
 Abaixo você pode ver alguns número da sequência e constatar esse padrão:
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …….
